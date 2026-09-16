@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Navbar() {
   return (
     <div>
@@ -5,8 +7,9 @@ function Navbar() {
         <img src="/assets/images/logo.png" alt="App logo" class="w-16 h-16" />
       </div>
       <div>
-        <h1>Home</h1>
+        <Link to="/">Home</Link>
       </div>
+      <div>Logout</div>
       <img />
     </div>
   );
