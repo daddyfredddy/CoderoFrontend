@@ -7,7 +7,7 @@ function Home() {
   const navigate = useNavigate();
   useEffect(() => {
     function handleKeyDown(event) {
-      if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'a') {
+      if (event.ctrlKey && event.shiftKey && event.altKey && event.key.toLowerCase() === 'a') {
         event.preventDefault();
         navigate('/adminLogin');
       }
@@ -20,7 +20,7 @@ function Home() {
   }, [navigate]);
 
   return (
-    <div>
+    <div class="w-3/4 mx-auto">
       <Navbar />
       <Section />
     </div>
